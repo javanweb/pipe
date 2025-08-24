@@ -66,11 +66,11 @@ export function Products() {
               </div>
             </CardHeader>
             <CardContent className="p-6">
-              <CardTitle className="text-xl mb-3 group-hover:text-primary-600 transition-colors">
+              <CardTitle className="text-xl mb">
                 {product.title}
               </CardTitle>
               <CardDescription className="text-gray-600 mb-4">{product.description}</CardDescription>
-              <Button variant="ghost" className="p-0 h-auto text-primary-600 hover:text-primary-700">
+              <Button variant="ghost" className="p-0 h-auto text-[#25408f] hover:text-[#1a2d6c] transition-colors duration-200">
                 Learn more
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -79,9 +79,18 @@ export function Products() {
         ))}
       </div>
       <div className="text-center mt-12">
-        <Button size="lg" variant="outline">
-          All Categories
-        </Button>
+<Button 
+  size="lg"
+  className="bg-[#25408f] 
+             hover:bg-[#1e357b] 
+             text-white 
+             font-medium 
+             transition-colors 
+             duration-200 
+             hover:shadow"
+>
+  Download Catalog
+</Button>
       </div>
     </Section>
   )

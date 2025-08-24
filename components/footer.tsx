@@ -19,7 +19,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-brand-red rounded flex items-center justify-center">
+              <div className="w-8 h-8 bg-[#25408f] rounded flex items-center justify-center">
                 <span className="text-white font-bold text-sm">IP</span>
               </div>
               <span className="font-heading font-bold text-xl">{siteConfig.name}</span>

@@ -25,9 +25,13 @@ export function Hero() {
             business, budget and the safety of your home.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-brand-red hover:bg-red-700">
-              Download Catalog
-            </Button>
+<Button 
+  size="lg"
+  style={{ backgroundColor: '#25408f' }}
+  className="hover:bg-[#1e357b] hover:opacity-90 text-white transition duration-200"
+>
+  Download Catalog
+</Button>
             <Button
               size="lg"
               variant="outline"

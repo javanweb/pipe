@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Section } from "@/components/section"
+import { Button } from "@/components/ui/button"
 
 export function Industries() {
   const industries = [
@@ -17,26 +18,18 @@ export function Industries() {
     },
     {
       title: "Healthcare Facilities",
-      image: "/placeholder.svg?height=300&width=400",
-    },
-    {
-      title: "Educational Institutions",
-      image: "/placeholder.svg?height=300&width=400",
-    },
-    {
-      title: "Hospitality Sector",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/industrial-piping.png",
     },
   ]
 
   return (
+    
     <Section
       title="Industries & Applications"
       description="Serving diverse sectors with tailored piping solutions"
-      className="bg-gray-50"
     >
-      <div className="overflow-x-auto">
-        <div className="flex space-x-6 pb-4" style={{ scrollSnapType: "x mandatory" }}>
+ 
+        <div className="flex space-x-6 pb-3" style={{ scrollSnapType: "x mandatory" }}>
           {industries.map((industry, index) => (
             <div key={index} className="flex-shrink-0 w-80 group cursor-pointer" style={{ scrollSnapAlign: "start" }}>
               <div className="relative overflow-hidden rounded-lg shadow-md group-hover:shadow-lg transition-shadow duration-300">
@@ -55,7 +48,21 @@ export function Industries() {
             </div>
           ))}
         </div>
+      <div className="text-center mt-12">
+<Button 
+  size="lg"
+  className="bg-[#25408f] 
+             hover:bg-[#1e357b] 
+             text-white 
+             font-medium 
+             transition-colors 
+             duration-200 
+             hover:shadow"
+>
+  Download Catalog
+</Button>
       </div>
+
     </Section>
   )
 }

@@ -35,7 +35,7 @@ export function About() {
           <ul className="space-y-3">
             {benefits.map((benefit, index) => (
               <li key={index} className="flex items-start space-x-3">
-                <Check className="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0" />
+                <Check className="h-5 w-5 text-[#25408f] mt-0.5 flex-shrink-0" />
                 <span className="text-gray-700">{benefit}</span>
               </li>
             ))}

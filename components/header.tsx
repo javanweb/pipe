@@ -31,8 +31,7 @@ function DropdownLink({
   return (
     <Link
       href={href}
-      className="block w-full px-3 py-2 text-sm text-blog hover:text-blue-700 transition-colors"
-    >
+className="block w-full px-3 py-2 text-sm text-[#000000] hover:text-[#25408f] transition-colors duration-200"    >
       {children}
     </Link>
   );
@@ -89,7 +88,7 @@ export function Header() {
       dir="rtl"
       className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80"
     >
-      <div className="mx-auto max-w-7xl px-4">
+      <div className="mx-auto max-w-8xl px-10">
         <div className="flex h-16 items-center justify-between">
           {/* لوگو */}
           <div className="flex items-center">
@@ -101,7 +100,7 @@ export function Header() {
                 width={150}
                 height={50}
                 priority
-                className="h-10 w-auto object-contain"
+                className="h-20 w-50 object-contain"
               />
             </Link>
           </div>
@@ -156,19 +155,19 @@ export function Header() {
             <div className="flex gap-3 mr-10">
               <Link
                 href="/requests/agency"
-                className="rounded-full border border-blue-600 px-4 py-1.5 text-xs font-bold text-blog hover:bg-blue-600 hover:text-white transition-all duration-200"
+                className="rounded-full border border-[#25408f] px-4 py-1.5 text-xs font-bold text-[#000000] hover:bg-[#25408f] hover:text-white transition-all duration-200 transform hover:scale-105"
               >
                 درخواست نمایندگی
               </Link>
               <Link
                 href="/requests/sample"
-                className="rounded-full border border-blue-600 px-4 py-1.5 text-xs font-bold text-blog hover:bg-blue-600 hover:text-white transition-all duration-200"
+                className="rounded-full border border-[#25408f] px-4 py-1.5 text-xs font-bold text-[#000000] hover:bg-[#25408f] hover:text-white transition-all duration-200 transform hover:scale-105"
               >
                 درخواست نمونه کالا
               </Link>
               <Link
                 href="/downloads/order-form"
-                className="rounded-full border border-blue-600 px-4 py-1.5 text-xs font-bold text-blog hover:bg-blue-600 hover:text-white transition-all duration-200"
+                className="rounded-full border border-[#25408f] px-4 py-1.5 text-xs font-bold text-[#000000] hover:bg-[#25408f] hover:text-white transition-all duration-200 transform hover:scale-105"
               >
                 ارسال فرم سفارش
               </Link>
@@ -217,7 +216,7 @@ export function Header() {
                     <SheetClose asChild>
                       <Link
                         href="/requests/agency"
-                        className="rounded-full border border-blue-600 px-4 py-1.5 text-sm text-blue-600 hover:bg-blue-600 hover:text-white"
+                className="rounded-full border border-[#25408f] px-4 py-1.5 text-xs font-bold text-[#000000] hover:bg-[#25408f] hover:text-white transition-all duration-200 transform hover:scale-105"
                       >
                         درخواست نمایندگی
                       </Link>
@@ -225,7 +224,7 @@ export function Header() {
                     <SheetClose asChild>
                       <Link
                         href="/requests/sample"
-                        className="rounded-full border border-blue-600 px-4 py-1.5 text-sm text-blue-600 hover:bg-blue-600 hover:text-white"
+                className="rounded-full border border-[#25408f] px-4 py-1.5 text-xs font-bold text-[#000000] hover:bg-[#25408f] hover:text-white transition-all duration-200 transform hover:scale-105"
                       >
                         درخواست نمونه کالا
                       </Link>
@@ -233,7 +232,7 @@ export function Header() {
                     <SheetClose asChild>
                       <Link
                         href="/downloads/order-form"
-                        className="rounded-full border border-blue-600 px-4 py-1.5 text-sm text-blue-600 hover:bg-blue-600 hover:text-white"
+                className="rounded-full border border-[#25408f] px-4 py-1.5 text-xs font-bold text-[#000000] hover:bg-[#25408f] hover:text-white transition-all duration-200 transform hover:scale-105"
                       >
                         ارسال فرم سفارش
                       </Link>
